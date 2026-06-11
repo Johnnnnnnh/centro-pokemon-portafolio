@@ -1,1 +1,142 @@
-<!DOCTYPE html><html><body><h1>Centro Pokémon</h1><p>Portafolio Centro Pkmn</p></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Centro Pokémon</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+    <h1>Centro Pokémon</h1>
+    <p>Portafolio Académico</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#productos">Pokémon</a>
+    <a href="#videos">Videos</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="inicio" class="contenedor">
+    <h2>Bienvenido al Centro Pokémon</h2>
+    <p>
+        Este portafolio combina mi interés por el desarrollo web y la temática
+        Pokémon, presentando contenido multimedia, proyectos y un formulario
+        conectado a una base de datos.
+    </p>
+</section>
+
+<section id="sobre-mi" class="contenedor">
+    <h2>Sobre mí</h2>
+    <p><strong>Nombre:</strong> John Tapia</p>
+    <p><strong>Carrera:</strong> Analista programador</p>
+    <p><strong>Semestre:</strong> Tercer semestre</p>
+    <p>
+        Estudiante interesado en las nuevas tecnologías y los videojuegos,
+        con experiencia en desarrollo web y bases de datos.
+    </p>
+</section>
+
+<section id="habilidades" class="contenedor">
+    <h2>Habilidades</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Centro Pokémon Multimedia</h3>
+            <p>Sitio web inspirado en Pokémon que presenta un catálogo interactivo,
+               videos y diseño responsivo.</p>
+            <p><strong>Tecnologías:</strong> HTML, CSS y Multimedia.</p>
+        </div>
+
+        <div class="card">
+            <h3>Sistema de Contacto Pokémon</h3>
+            <p>Implementación de un formulario conectado a un backend con Node.js
+               para almacenar mensajes en MySQL.</p>
+            <p><strong>Tecnologías:</strong> JavaScript, Node.js, Express y MySQL.</p>
+        </div>
+    </div>
+</section>
+
+<section id="proyectos" class="contenedor">
+    <h2>Proyectos</h2>
+    <div class="grid">
+        <div class="card">
+            <p>Aplicación de registro y mantención de camiones para una empresa de transporte, utilizando Java y MySQL.</p>
+        </div>
+        <div class="card">
+            <p>Aplicación de registro y mantención de periféricos para una empresa de tecnología, utilizando Java y MySQL.</p>
+        </div>
+    </div>
+</section>
+
+<section id="productos" class="contenedor">
+    <h2>Pokémon Destacados</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="img/melmetal.png" alt="Melmetal">
+            <h3>Melmetal</h3>
+            <p>Pokémon singular de tipo Acero, reconocido por su enorme fuerza física y su capacidad para generar electricidad.</p>
+        </div>
+        <div class="card">
+            <img src="img/registeel.png" alt="Registeel">
+            <h3>Registeel</h3>
+            <p>Pokémon legendario de tipo Acero cuyo cuerpo es más duro que cualquier metal.</p>
+        </div>
+        <div class="card">
+            <img src="img/aggron.png" alt="Aggron">
+            <h3>Aggron</h3>
+            <p>Pokémon de tipo Acero/Roca que protege su territorio y posee una increíble defensa.</p>
+        </div>
+    </div>
+</section>
+
+<section id="videos" class="contenedor">
+    <h2>Videos destacados</h2>
+    <div class="videos">
+        <video controls>
+            <source src="videos/melmetal.mp4" type="video/mp4">
+        </video>
+
+        <video controls>
+            <source src="videos/registeel.mp4" type="video/mp4">
+        </video>
+
+        <!-- Miniatura con enlace al video en YouTube -->
+        <a href="https://www.youtube.com/watch?v=30r7gUZl4xY" target="_blank">
+            <img src="https://img.youtube.com/vi/30r7gUZl4xY/0.jpg" 
+                 alt="Video en YouTube"
+                 style="max-width:320px; border-radius:15px; box-shadow:0 3px 10px rgba(0,0,0,0.15);">
+        </a>
+    </div>
+</section>
+
+
+<section id="contacto" class="contenedor">
+    <h2>Contacto</h2>
+    <p>Si deseas comunicarte conmigo o dejar algún comentario sobre el proyecto,
+       puedes completar el siguiente formulario.</p>
+
+    <!-- Formulario intacto -->
+    <form id="formContacto" class="formulario">
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required minlength="3">
+        <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required minlength="5"></textarea>
+        <button type="submit">Enviar mensaje</button>
+    </form>
+
+    <p id="respuestaFormulario"></p>
+</section>
+
+<footer>
+    <p>© 2026 Centro Pokémon - Portafolio Académico</p>
+    <p>Desarrollado por: John Tapia</p>
+    <p>GitHub: Johnnnnnnh/centro-pokemon-portafolio</p>
+</footer>
+
+</body>
+</html>
