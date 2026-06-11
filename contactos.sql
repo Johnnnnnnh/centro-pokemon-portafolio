@@ -1,0 +1,1 @@
+CREATE DATABASE portafolio; USE portafolio; CREATE TABLE contactos(id INT AUTO_INCREMENT PRIMARY KEY,nombre VARCHAR(100),correo VARCHAR(100),mensaje TEXT);
