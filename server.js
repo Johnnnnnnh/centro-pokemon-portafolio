@@ -15,6 +15,10 @@ app.use((req, res, next) => {
 // Servir carpeta "public"
 app.use(express.static(path.join(__dirname, "public")));
 
+// Servir carpeta "img" y "videos" desde la raíz del proyecto
+app.use("/img", express.static(path.join(__dirname, "img")));
+app.use("/videos", express.static(path.join(__dirname, "videos")));
+
 // Ruta explícita para index.html
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "index.html"));
